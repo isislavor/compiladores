@@ -1,10 +1,8 @@
-<Exp>::=<Exp>+<EXP>
-<EXP>::=<D>
-<D>::= 0<D> | 1<D> | ... | 9<D>
-<D>::= 0 | 1 ... | 9
-BNF
-Consts.PLUS
-E->E+E
+<Exp> ::= <Term> ((MINUS | PLUS) <Term>)*
+<Term> ::= <Factor> ((MUL | DIV) <Factor>)*
+<Factor> ::= (PLUS | MINUS)* <Factor>
+<Factor> ::= <Atom>
+<Atom> ::= INT | FLOAT | LPAR <Exp> RPAR
 
 PLUS é o +
 MUL é o *

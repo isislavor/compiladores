@@ -1,0 +1,20 @@
+<Exp>::=<Exp>+<EXP>
+<EXP>::=<D>
+<D>::= 0<D> | 1<D> | ... | 9<D>
+<D>::= 0 | 1 ... | 9
+BNF
+Consts.PLUS
+E->E+E
+
+PLUS é o +
+MUL é o *
+DIV é o /
+MINUS é o -
+POW é o ^
+LPAR é o (
+RPAR é o )
+INT é um inteiro qualquer
+FLOAT é um float qualquer
+ID é qualquer identificador
+LET é a palavra reservada let
+STRING algo entre aspas
